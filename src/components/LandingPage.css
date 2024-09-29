@@ -1,0 +1,110 @@
+/* LandingPage.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #040404ac 0%, #ffffff 100%) !important; /* Gradient background */
+  color: #ffffff; /* Set default text color to white for better contrast */
+  overflow: hidden; /* Prevent scrolling during animation */
+}
+
+.landing-page {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  padding: 20px; /* Added padding for mobile responsiveness */
+  animation: slideIn 0.5s ease-in-out; /* Animation for landing page */
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700; /* Bolder font for a more modern look */
+  color: #ffffff; /* Change heading color to white */
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode' !important;
+  text-align: center;
+  margin-bottom: 20px; /* Space below the heading */
+  animation: fadeIn 0.6s ease; /* Fade-in effect for the heading */
+}
+
+.landing-form {
+  display: grid;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.85); /* Adjusted opacity for better contrast */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+  padding: 30px;
+  animation: zoomIn 0.7s ease; /* Zoom-in effect for the form */
+}
+
+input,
+select {
+  padding: 15px;
+  border: 2px solid #dcdcdc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus {
+  border: 2px solid #10100f; /* Use a warm accent color */
+  box-shadow: 0 0 5px rgba(255, 226, 7, 0.5); /* Match focus shadow to accent color */
+  outline: none;
+}
+
+button.start-btn {
+  padding: 15px;
+  background-color: #100d01; /* Warm accent color */
+  color: #f2f3f5; /* Dark text for contrast on button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(11, 11, 11, 0.3); /* Light shadow for button */
+}
+
+button.start-btn:hover {
+  background-color: #258807; /* Darker shade for hover state */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(141, 138, 136, 0.4); /* Shadow on hover */
+}
+
+button.start-btn:active {
+  transform: translateY(1px);
+}
+
+/* Keyframes for animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
