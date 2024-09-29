@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #040404ac 0%, #ffffff 100%) !important; /* Gradient background */
+  background: linear-gradient(135deg, #0a0a0a 0%, #ffffff 100%) !important; /* Updated gradient */
   color: #ffffff; /* Set default text color to white for better contrast */
   overflow: hidden; /* Prevent scrolling during animation */
 }
@@ -12,28 +12,43 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
-  padding: 20px; /* Added padding for mobile responsiveness */
+  padding: 15px; /* Added padding for mobile responsiveness */
   animation: slideIn 0.5s ease-in-out; /* Animation for landing page */
 }
 
-h1 {
-  font-size: 3rem;
-  font-weight: 700; /* Bolder font for a more modern look */
-  color: #ffffff; /* Change heading color to white */
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode' !important;
-  text-align: center;
+h4 {
+  font-weight: 800 !important; /* Bolder font for a more modern look */
+
+ 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif !important; /* Ensure fallback font */
+  text-align: center; /* Center align the heading */
   margin-bottom: 20px; /* Space below the heading */
   animation: fadeIn 0.6s ease; /* Fade-in effect for the heading */
+  font-size: 1.5rem; /* Increase font size for better visibility */
+  letter-spacing: 0.3px; /* Slightly increased letter spacing for a modern feel */
+  text-transform: uppercase; /* Uppercase letters for emphasis */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
+
+
+
+/* Optional: Adding responsiveness */
+@media (max-width: 600px) {
+  h4 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}
+
 
 .landing-form {
   display: grid;
-  gap: 15px;
+  gap: 13px;
   width: 100%;
-  max-width: 400px;
-  background: rgba(255, 255, 255, 0.85); /* Adjusted opacity for better contrast */
+  max-width: 450px;
+  max-height: 570px;
+  background: rgba(255, 255, 255, 0.9); /* Slightly increased opacity for better contrast */
   border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* Darker shadow for depth */
   padding: 30px;
   animation: zoomIn 0.7s ease; /* Zoom-in effect for the form */
 }
@@ -44,32 +59,32 @@ select {
   border: 2px solid #dcdcdc;
   border-radius: 5px;
   font-size: 1rem;
-  transition: border 0.3s, box-shadow 0.3s;
+  transition: border 0.3s ease, box-shadow 0.3s ease; /* Consistent transitions */
 }
 
 input:focus,
 select:focus {
-  border: 2px solid #10100f; /* Use a warm accent color */
-  box-shadow: 0 0 5px rgba(255, 226, 7, 0.5); /* Match focus shadow to accent color */
+  border: 2px solid #0f0d02; /* Warm accent color */
+  box-shadow: 0 0 5px rgba(6, 6, 6, 0.5); /* Match focus shadow to accent color */
   outline: none;
 }
 
 button.start-btn {
   padding: 15px;
-  background-color: #100d01; /* Warm accent color */
+  background-color: #101010; /* Warm accent color */
   color: #f2f3f5; /* Dark text for contrast on button */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.1rem;
   font-weight: 600;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Improved transition */
   box-shadow: 0 4px 10px rgba(11, 11, 11, 0.3); /* Light shadow for button */
 }
 
 button.start-btn:hover {
   background-color: #258807; /* Darker shade for hover state */
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.05); /* Slight scale effect on hover */
   box-shadow: 0 6px 15px rgba(141, 138, 136, 0.4); /* Shadow on hover */
 }
 

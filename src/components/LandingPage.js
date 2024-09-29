@@ -30,7 +30,7 @@ const LandingPage = () => {
     <div className="landing-page">
     
       <form onSubmit={handleSubmit} className="landing-form">
-      <h2>Welcome to the Interviewer App</h2>
+       <div className='brand'><h4>Welcome to Ai Interviewer</h4></div>
         <input type="text" placeholder="Name" value={name} onChange={handleNameChange} required />
         <input type="text" placeholder="Job Role" value={jobRole} onChange={(e) => setJobRole(e.target.value)} required />
         <input type="text" placeholder="Technical Skills" value={skills} onChange={(e) => setSkills(e.target.value)} />

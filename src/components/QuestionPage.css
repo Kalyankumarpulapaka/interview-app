@@ -2,13 +2,16 @@
 
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font family */
   color: #333;
+  background-color: #f4f7fa; /* Soft background color for a modern feel */
 }
-.own{
-  color: #00060b !important;
-  border: 2px solid black !important;
+
+.own {
+  color: #0c1c2e !important; /* Darker primary color for visibility */
+  border: 2px solid #0c1c2e !important; /* Matching border color */
 }
+
 .question-page {
   display: flex;
   flex-direction: column;
@@ -18,86 +21,86 @@ body {
   animation: fadeIn 0.5s ease-in-out;
 }
 
-h2 {
+h1 {
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 700; /* Increased font weight for prominence */
   margin-bottom: 20px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow';
-  color: rgb(16, 1, 1) !important; /* Kept for contrast against the background */
-  text-shadow: 1px 1px 5px rgba(246, 243, 243, 0.1);
+  font-family: 'Poppins', sans-serif; /* Modern sans-serif font */
+  color : white !important; /* Darker color for better contrast */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Softer shadow */
 }
 
 .question-container {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Increased gap for better spacing */
+  gap: 30px; /* Increased gap for better spacing */
   width: 100%;
   max-width: 800px;
-  background: white; /* Neutral background for contrast */
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.588); /* Enhanced shadow */
-  padding: 30px;
-  transition: transform 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+  background: white;
+  border-radius: 12px; /* Softer corners for a modern look */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  padding: 40px; /* More padding for a spacious feel */
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .question-container:hover {
-  transform: translateY(-5px); /* More noticeable hover effect */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.683); /* Shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Enhanced hover shadow */
 }
 
 .question-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Maintain gap for better spacing */
+  gap: 20px; /* Consistent spacing */
 }
 
 .question-text {
-  font-size: 1.4rem; /* Increased font size for visibility */
+  font-size: 1.5rem; /* Increased font size for better readability */
   font-weight: 500;
-  line-height: 1.5; /* Better line height for readability */
-  color: #090909; /* Darker text for better contrast */
+  line-height: 1.6; /* Improved line height for readability */
+  color: #2c2c2c; /* Darker text for contrast */
 }
 
 .answer-input {
   padding: 15px;
-  border: 2px solid #dcdcdc;
-  border-radius: 5px;
+  border: 2px solid #e0e0e0; /* Lighter border color */
+  border-radius: 6px; /* Slightly rounded corners */
   font-size: 1rem;
   transition: border 0.3s, box-shadow 0.3s;
   width: 100%;
-  font-family: 'Arial', sans-serif; /* Ensuring consistency */
+  font-family: 'Arial', sans-serif; /* Consistent font */
 }
 
 .answer-input:focus {
-  border: 2px solid #00060b; /* Primary color */
-  box-shadow: 0 0 10px rgba(1, 10, 20, 0.5); /* Enhanced focus effect */
+  border: 2px solid #0c1c2e; /* Primary color */
+  box-shadow: 0 0 12px rgba(12, 28, 46, 0.5); /* Enhanced focus effect */
   outline: none;
 }
 
 .button-group {
   display: flex;
   justify-content: flex-end; /* Align buttons to the right */
-  gap: 10px; /* Added space between buttons */
+  gap: 15px; /* Increased space between buttons */
 }
 
 button {
-  padding: 12px 20px; /* Adjusted padding for buttons */
-  background-color: #0d0d0e; /* Primary button color */
+  padding: 12px 24px; /* Increased padding for a better touch target */
+  background-color: #0b0c0c; /* Primary button color */
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px; /* Softer corners */
   cursor: pointer;
   font-size: 1.1rem;
   font-weight: 600;
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 10px rgba(18, 18, 18, 0.3); /* Added shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
 }
 
 button:hover {
-  background-color: #05671c; /* Darker shade on hover */
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(2, 118, 27, 0.477); /* Shadow on hover */
+  background-color: #106603; /* Darker shade on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced hover shadow */
 }
 
 button:active {
@@ -106,10 +109,10 @@ button:active {
 
 .feedback-section {
   margin-top: 100px;
-  padding: 15px;
-  border: 2px solid #010c18; /* Primary color for border */
-  border-radius: 10px;
-  background-color: white ; /* Light background for feedback */
+  padding: 20px; /* Increased padding */
+  border: 2px solid #0c1c2e; /* Primary color for border */
+  border-radius: 12px; /* Softer corners */
+  background-color: #ffffff; /* Light background for feedback */
   width: 100%;
   max-width: 800px;
   text-align: center;
